@@ -1,0 +1,61 @@
+$border-color: #d8d8d8;
+$invalid-color: #d91313;
+$submit-disable-color: #afafaf;
+$submit-active-color: #52cf4f;
+
+.user-form {
+  @include flexColumnWithGap(10px);
+}
+.user-form_fieldset {
+  @extend .user-form;
+  box-sizing: border-box;
+}
+
+.user-page_wrapper {
+  height: 100vh;
+  @extend .users-list_wrapper;
+}
+.user-page_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 13px;
+}
+.input_wrapper {
+  @include flexColumnWithGap(3px);
+}
+.input-item {
+  padding: 5px 10px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  width: 50%;
+  &::placeholder {
+    color: $text-ligth-color;
+  }
+  &:invalid {
+    border: 1px solid $invalid-color;
+  }
+}
+
+.comment {
+  width: 95%;
+  min-height: 55px;
+  resize: none;
+}
+.button-submit {
+  color: $body-color;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: auto;
+}
+.button-submit_disable {
+  background-color: $submit-disable-color;
+}
+.button-submit_active {
+  background-color: $submit-active-color;
+}
+.user-form_fieldset {
+  border: 1px solid $user-item-color;
+  border-radius: 8px;
+}

@@ -1,0 +1,27 @@
+$link-color: #4b51ef;
+$link-hover-color: #2a31f3;
+$user-item-font-size: 13px;
+
+.user-item {
+  @include flexColumnWithGap(7px);
+  padding: 10px;
+  width: 100%;
+  background-color: $user-item-color;
+  border-radius: 5px;
+  font-size: $user-item-font-size;
+  box-sizing: border-box;
+}
+.user-item-option {
+  display: flex;
+  gap: 7px;
+}
+.user-item_link {
+  margin-left: auto;
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+.user-item_title {
+  color: $text-ligth-color;
+}

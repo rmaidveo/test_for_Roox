@@ -1,0 +1,12 @@
+$side-color: #bdbdbd;
+
+.sorting_wrapper {
+  @include flexColumn();
+  background-color: $side-color;
+  padding: 25px;
+  width: 23%;
+  align-items: center;
+}
+.sorting {
+  @include flexColumnWithGap(10px);
+}
